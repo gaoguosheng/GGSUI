@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="GGSUI:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="GGSUI.war">
+      <element id="artifact" artifact-name="GGSUI:war exploded" />
+    </root>
+  </artifact>
+</component>
