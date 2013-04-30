@@ -34,7 +34,7 @@
 
 
 <!-- ggs -->
-<script type="text/javascript" src="${ctx}/lib/ggs/js/ggs.js"></script>
+<script type="text/javascript" src="${ctx}/lib/ggs/js/ggs-min.js"></script>
 
 <script type="text/javascript">
     //上下文路径

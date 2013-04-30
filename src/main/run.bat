@@ -1,0 +1,1 @@
+java -jar compiler.jar --js webapp/lib/ggs/js/ggs.js --js_output_file webapp/lib/ggs/js/ggs-min.js
