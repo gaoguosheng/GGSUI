@@ -13,26 +13,26 @@
             <a class="btn " ><i class="icon-edit"></i> 修改</a>
             <a class="btn btn-danger" ><i class="icon-remove icon-white"></i> 删除</a>
         </div>
-        <div id="mytable" class="ggs-table">
-            <table id="table1" class="table table-striped table-bordered table-condensed " width="100%">
+
+            <table class="table table-striped table-bordered table-hover table-condensed">
             <thead>
             <tr>
-                <th width="20%">用户名<i class="icon-chevron-up pull-right icon-white"></i></th>
-                <th width="20%">注册日期</th>
-                <th width="20%">角色</th>
-                <th width="20%">状态</th>
-                <th width="20%">操作</th>
+                <th>用户名<i class="icon-chevron-up pull-right icon-white"></i></th>
+                <th>注册日期</th>
+                <th>角色</th>
+                <th>状态</th>
+                <th>操作</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td width="20%">David R</td>
-                <td width="20%" class="center">2012/01/01</td>
-                <td width="20%" class="center">Member</td>
-                <td width="20%" class="center">
+                <td>David R</td>
+                <td class="center">2012/01/01</td>
+                <td class="center">Member</td>
+                <td class="center">
                     <span class="label label-success">Active</span>
                 </td>
-                <td width="20%" class="center">
+                <td  class="center">
                     <a class="btn" href="#">
                         <i class="icon-zoom-in"></i>
                         View
@@ -731,12 +731,12 @@
             </tr>
             </tbody>
             </table>
-        </div>
+
     </div><!--/fluid-row-->
 </div><!--/.fluid-container-->
 <script type="text/javascript">
     $(".btn").click(function(){
-        f_openDialog();
+        f_openUserDialog();
     });
     $(".btn-danger").unbind("click");
     $(".btn-danger").click(function(){

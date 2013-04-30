@@ -1,4 +1,4 @@
-/*! jQuery GGS v1.8.2 /license */ 
+/*! jQuery bootstrap GGS v2013 /license */
 
 var $GGS={
     /**

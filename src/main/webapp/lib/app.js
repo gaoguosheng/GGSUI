@@ -34,7 +34,14 @@ var menuNodes = [ {
 	name : "系统管理",
 	pId : 0,
 	url : $GGS.contextPath + "/main/demo.jsp"
-}, {
+},  {
+    id : 8,
+    name : "通讯录",
+    pId : 0,
+    url : $GGS.contextPath + "/main/addr.jsp"
+},
+
+    {
 	id : 21,
 	name : "待办事项",
 	pId : 2,
@@ -161,4 +168,36 @@ function f_openDialog(){
             }
         } ]
     });
+}
+
+/**
+ * 打开对话框
+ * */
+function f_openUserDialog(){
+    $GGS.bootstrap.dialog({
+        id : "userDialog",
+        title : "测试标题",
+        url:$GGS.contextPath+"/main/user.jsp",
+        modal : false,
+        width:800,
+        top:1,
+        buttons : [
+            {
+                name : "保存",
+                className : "btn btn-primary",
+                click : function() {
+                    $GGS.tips("保存成功！");
+                    $GGS.bootstrap.closeDialog("userDialog");
+                }
+            },
+            {
+                name : "关闭",
+                className : "btn",
+                click : function() {
+                    $GGS.bootstrap.closeDialog("userDialog");
+                }
+            }
+        ]
+    });
+    $GGS.form.enterDown();
 }

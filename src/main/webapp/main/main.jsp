@@ -204,8 +204,9 @@
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
+    </div>
     <script type="text/javascript">
-        $("a").click(function(){
+        $("table a").click(function(){
             f_openDialog();
       });
       </script>
