@@ -29,6 +29,7 @@
 	        padding-top: 40px;
 	        padding-bottom: 40px;
 	        background-color: #f5f5f5;
+            overflow: hidden;
 	        
 	      }
 	      .form-signin {
@@ -72,12 +73,13 @@
 		 	</tr>
 		 	<tr>
 		 		<td colspan="2">
-		 			<button class="btn btn-large btn-primary" type="submit" >登录</button>
+		 			<button class="btn btn-large btn-primary" type="submit" >登&nbsp;&nbsp;录</button>
 		 		</td>
 		 	</tr>		 	
 		 </table>		 
 		</form>
-    </div> <!-- /container -->    
+    </div> <!-- /container -->
+
 	<script type="text/javascript">
 		function f_showMsg(){
             <c:choose>
@@ -85,7 +87,8 @@
                     $GGS.tips("验证码不正确！");
                 </c:when>
                 <c:when test="${msg==1}">
-                    location="${ctx}/main/index2.jsp";
+                    $GGS.bootstrap.prcessBar("正在登录……",function(){location="${ctx}/main/index.jsp";},2000);
+
                 </c:when>
                 <c:when test="${msg==0}">
                 $GGS.tips("用户名或者密码不正确！");
@@ -94,5 +97,8 @@
 		}
 		f_showMsg();
 		$GGS.form.enterDown();
-		$("#username").focus();		
+		$("#username").focus();
+
+
+
 	</script>

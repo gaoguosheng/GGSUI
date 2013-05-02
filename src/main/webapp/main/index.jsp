@@ -1,203 +1,49 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
-<%@include file="/inc/top.jsp" %>
-    <div class="container-fluid">
-      <div class="row-fluid">        	
-        	<div class="span2" >     	
-        		<%@include file="/inc/menu.jsp" %>        	
-        	</div><!-- span -->     
-        
-        <div class="span10">
-          <div class="hero-unit">
-            <h2>${softName }</h2>          
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;随着协同市场的发展，客户对OA的需求和理解，已经不仅仅停留在传统OA办公自动化、无纸化办公的概念上来，转而向企业管理纵深和全面的协同管理平台上进行延伸。传统OA仅仅是传统办公自动化侧重公文、行政事务为主的无纸化办公系统，并没有深入到企业全面管理及核心业务流程的管理中去，而真正适合企业全面管理应用的就应该是个集中办公、人力、客服、市场及销售、项目、财务、库存和订单等核心业务流程综合统一、解决企业全方位管理的CMP协同管理平台。</p>  
-            <p><a href="#" class="btn btn-primary btn-large">开始 &raquo;</a></p>
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h3><i class="icon-list"></i> 公告通知</h3>
-              
-              <table class="table table-striped table-bordered table-hover table-condensed">
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a href="#">05.01 卧龙谷划草</a></td>
-                                <td>2013-04-15</td>
-                                <td>高国生</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>            
-
-                            </tbody>
-                        </table>
-              
-              <p><a class="btn" href="#">查看详细 &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h3><i class="icon-list"></i> 内部邮件</h3>
-              
-              <table class="table table-striped table-bordered table-hover table-condensed">
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a href="#" >五一放假通知</a> </td>
-                                <td>2013-04-16 </td>
-                                <td>林晓静 </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><a href="#" >清明节放假通知</a></td>
-                                <td>2013-04-01</td>
-                                <td>林晓静</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>                        
-                            </tbody>
-                        </table>
-              
-              
-              <p><a class="btn" href="#">查看详细 &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h3><i class="icon-edit"></i> 日程计划</h3>
-              <table class="table table-striped table-bordered table-hover table-condensed">
-                <tbody>
-                <tr>
-                    <td width="70" height="26" align="center">日/周/月报</td>
-                    <td>日</td>
-                    <td>周</td>
-                    <td>月</td>
-                </tr>
-                <tr>
-                    <td>写</td>
-                    <td>&nbsp;<a href="#"><span class="icon-edit"></span></a></td>
-                    <td>&nbsp;<a href="#"><span class="icon-edit"></span></a></td>
-                    <td>&nbsp;<a href="#"><span class="icon-edit"></span></a></td>
-                </tr>
-                <tr>
-                    <td>看下级</td>
-                    <td>&nbsp;5</td>
-                    <td>&nbsp;3</td>
-                    <td>&nbsp;4</td>
-                </tr>
-                <tr>
-                    <td>提交情况</td>
-                    <td>&nbsp;3</td>
-                    <td>&nbsp;3</td>
-                    <td>&nbsp;2</td>
-                </tr>
-                <tr>
-                    <td>汇总</td>
-                    <td>&nbsp;20</td>
-                    <td>&nbsp;34</td>
-                    <td>&nbsp;32</td>
-                </tr>
-                </tbody>
-            </table>
-              
-              
-              
-              
-              <p><a class="btn" href="#">查看详细 &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            <div class="span4">
-              <h3><i class="icon-time"></i> 待办事项</h3>
-              
-              <table class="table table-striped table-bordered table-hover table-condensed">
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a href="#" >请假</a> </td>
-                                <td>2013-04-16 </td>
-                                <td>翁雨辰 </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><a href="#" >物资申购</a></td>
-                                <td>2013-04-01</td>
-                                <td>林晓静</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>                          
-                            </tbody>
-                        </table>
-              
-              <p><a class="btn" href="#">查看详细 &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h3><i class="icon-ok"></i> 已办事项</h3>
-              <p></p>
-              <p><a class="btn" href="#">查看详细 &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h3><i class="icon-forward"></i> 已发事项</h3>
-              <p></p>
-              <p><a class="btn" href="#">查看详细 &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
-
-  <%@include file="/inc/copy.jsp" %>
-   
-	
-	<script type="text/javascript">	
-		$GGS.bootstrap.alert('欢迎您使用平台');		
-		$GGS.tips("<a href='#'>翁雨辰发起请假：2013-04-16</a>",60);
-		$GGS.tips("<a href='#'>林晓静发起物资申购：2013-04-01</a>",60);
-	</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>	
+	<%@include file="/inc/lib.jsp" %>
+	<title>${softName}</title>
+	<style type="text/css">
+      body {
+        overflow: hidden;
+        padding-bottom: 0px;
+      }      
+    </style>    
+</head>  
+<div class="navbar navbar-inverse" style="margin-bottom: 5px;">
+    <div class="navbar-inner">
+    	<a class="brand" href="#">&nbsp;&nbsp;${softName}</a>
+		<div id="navDiv"></div>
+		<ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-large icon-white"></i> 主题<b class="caret"></b></a>
+                        <ul id="themeUl" class="dropdown-menu">
+                            <li class="${sessionScope.theme=="default"?"active":""}"><a role="menuitem" tabindex="-1" href="index.jsp?theme=default">default</a></li>
+                            <li class="${sessionScope.theme=="cerulean"?"active":""}"><a href="index.jsp?theme=cerulean">cerulean</a></li>
+                            <li class="${sessionScope.theme=="united"?"active":""}"><a href="index.jsp?theme=united">united</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> Admin<b class="caret"></b></a>
+                      <ul class="dropdown-menu" >
+                        <li><a role="menuitem" href="javascript:f_updatePwd();">修改密码</a></li>
+                        <li><a role="menuitem" href="#">修改资料</a></li>
+                      </ul>
+                    </li>
+                    <li><a role="menuitem" tabindex="-1" href="javascript:f_openDialog();" ><i class="icon-comment icon-white"></i> 消息(<span id="msgSpan">8</span>)</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="javascript:f_exit();" ><i class="icon-arrow-right icon-white"></i> 退出系统</a></li>
+        </ul>
+	</div>
+</div>	
+<div id="tabsDiv"></div>
+<%@include file="/inc/copy.jsp" %>
+<script type="text/javascript">		
+	$GGS.bootstrap.nav(menuNodes,"navDiv",true);
+	$GGS.bootstrap.tabs("tabsDiv");
+	$GGS.bootstrap.addTab(1,"首页","${ctx}/main/main.jsp",true);
+	$GGS.bootstrap.alert('欢迎您使用平台');		
+	$GGS.tips("<a href='#'>翁雨辰发起请假：2013-04-16</a>",60);
+	$GGS.tips("<a href='#'>林晓静发起物资申购：2013-04-01</a>",60);
+    $(".messenger-message-inner").click(function(){f_openDialog();});
+</script>

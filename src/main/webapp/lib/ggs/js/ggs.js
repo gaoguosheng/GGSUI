@@ -353,7 +353,33 @@ var $GGS={
 	                            }}
                              ]
 	    	});
-	    }
+	    },
+        /**
+         * 进度框
+         * */
+        prcessBar:function (title,fun,times){
+            var msg='<div class="progress progress-striped active"><div class="bar" style="width: 0%;"></div></div>';
+            this.dialog({
+                id:"ggs-prcessBar",
+                title:title,
+                content:msg,
+                top:150,
+                width:350,
+                height:40
+            });
+            var tmp = 0;
+
+            var mytime = window.setInterval(function(){
+                tmp+=300;
+                var t=tmp/times*100;
+                $("#ggs-prcessBar .bar").css("width",t+"%");
+                if(tmp>times){
+                    window.clearInterval(mytime);
+                    fun();
+                    $GGS.bootstrap.closeDialog("ggs-prcessBar");
+                }
+            },300);
+        }
 	    
 	    
 	},

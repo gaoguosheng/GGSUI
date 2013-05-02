@@ -29,16 +29,18 @@ var menuNodes = [ {
 	name : "知识库",
 	pId : 0,
 	url : $GGS.contextPath + "/main/demo.jsp"
-}, {
+},
+    {
+        id : 8,
+        name : "通讯录",
+        pId : 0,
+        url : $GGS.contextPath + "/main/addr.jsp"
+    },
+    {
 	id : 7,
 	name : "系统管理",
 	pId : 0,
 	url : $GGS.contextPath + "/main/demo.jsp"
-},  {
-    id : 8,
-    name : "通讯录",
-    pId : 0,
-    url : $GGS.contextPath + "/main/addr.jsp"
 },
 
     {

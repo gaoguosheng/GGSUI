@@ -1,18 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: GGS
-  Date: 13-4-16
-  Time: 下午4:20
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page language="java"  pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-  <head>	
-	<%@include file="/inc/lib.jsp" %>
-	<title>${softName}</title>	
-</head>
-<div class="container-fluid">
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@include file="/inc/top.jsp" %>
+    <div class="container-fluid">
       <div class="row-fluid">        	
         	<div class="span2" >     	
         		<%@include file="/inc/menu.jsp" %>        	
@@ -21,10 +9,8 @@
         <div class="span10">
           <div class="hero-unit">
             <h2>${softName }</h2>          
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;
-                Bootstrap是Twitter推出的一个开源的用于前端开发的工具包，Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目。GGSUI将原生Bootstrap进行了改造优化，封装了对话框、消息框、tips提醒、无限级菜单、表格等组件，也提供主题切换、表单回车键下移焦点等人性化功能，大幅提高开发效率……
-            </p>
-            <p><a href="#" class="btn btn-primary btn-large" target="_blank">下载 &raquo;</a></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;随着协同市场的发展，客户对OA的需求和理解，已经不仅仅停留在传统OA办公自动化、无纸化办公的概念上来，转而向企业管理纵深和全面的协同管理平台上进行延伸。传统OA仅仅是传统办公自动化侧重公文、行政事务为主的无纸化办公系统，并没有深入到企业全面管理及核心业务流程的管理中去，而真正适合企业全面管理应用的就应该是个集中办公、人力、客服、市场及销售、项目、财务、库存和订单等核心业务流程综合统一、解决企业全方位管理的CMP协同管理平台。</p>  
+            <p><a href="#" class="btn btn-primary btn-large">开始 &raquo;</a></p>
           </div>
           <div class="row-fluid">
             <div class="span4">
@@ -206,10 +192,12 @@
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
-    </div>
-    <script type="text/javascript">
-        $("table a").click(function(){
-            f_openDialog();
-      });
-      </script>
 
+  <%@include file="/inc/copy.jsp" %>
+   
+	
+	<script type="text/javascript">	
+		$GGS.bootstrap.alert('欢迎您使用平台');		
+		$GGS.tips("<a href='#'>翁雨辰发起请假：2013-04-16</a>",60);
+		$GGS.tips("<a href='#'>林晓静发起物资申购：2013-04-01</a>",60);
+	</script>

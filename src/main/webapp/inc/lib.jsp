@@ -1,7 +1,7 @@
 <%@ page language="java"  pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--软件名称--%>
-<c:set var="softName" value="企业协同平台" />
+<c:set var="softName" value="GGSUI" />
 <%--上下文路径--%>
 <c:set var="ctx" value="${pageContext.request.contextPath}"></c:set>
 <!-- The fav icon -->
